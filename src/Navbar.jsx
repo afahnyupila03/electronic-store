@@ -2,11 +2,11 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Wrapper from './Helpers/Wrapper';
 
-const NavbarTab = (props) => {
+const NavbarTab = () => {
 
     return (
         <Wrapper>
-            <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: '#004040'}} className='p-2' variant="gray">
+            <Navbar collapseOnSelect expand="lg" fixed='top' style={{ backgroundColor: '#004040'}} className='p-2' variant="gray">
                 <Container className='barlow'>
                     <Link to='/' className='navbar-brand text-danger' style={{ textDecoration: 'none', fontSize: '2rem' }}>
                         Electro.
@@ -38,19 +38,12 @@ const NavbarTab = (props) => {
                         <Nav>
                             <Link to='./login' className='nav-link' style={{ textDecoration: 'none', fontSize: '1.5rem', color: '#c0c0c0' }}>
                                 <i className="fa fa-user mx-1" aria-hidden="true"></i>
-                                Login
                             </Link>
                             <Link to='./wishlist' className='nav-link' style={{ textDecoration: 'none', fontSize: '1.5rem', color: '#c0c0c0' }}>
                                 <i className="fa fa-heart mx-1" aria-hidden="true"></i>
-                                <span className="top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                    {props.counter}
-                                </span>
                             </Link>
                             <Link to='/cart' className='nav-link' style={{ textDecoration: 'none', fontSize: '1.5rem', color: '#c0c0c0' }}>
                                 <i className="fa fa-shopping-cart mx-1" aria-hidden="true"></i>
-                                <span className="top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                    {props.counter}
-                                </span>
                             </Link>
                         </Nav>
                     </Navbar.Collapse>

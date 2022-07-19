@@ -1,14 +1,21 @@
 import { Container } from "react-bootstrap";
 import Wrapper from "../../Helpers/Wrapper";
 import TopSelling from "../Home/TopSelling";
+import WishlistUi from "./WishlistUI";
 
 
-const WishList = (props) => {
+const WishList = ({ wishlists, onAddToWishlist, onAddToCart }) => {
+
+    
+
     return (
         <Wrapper>
             <Container>
-                {props.wish}
-                <TopSelling />
+                <WishlistUi onWishlist={wishlists} />
+                <TopSelling 
+                    onClickAddCart={onAddToCart} 
+                    onClickAddWishlist={onAddToWishlist}  
+                />
             </Container>
         </Wrapper>
     );

@@ -4,17 +4,20 @@ import CardUI from "../../UI/CardUI";
 import SmartData from "./Smartdata";
 
 
-const Smart = () => {
+const Smart = ({  onAddToCart, onAddToWishlist }) => {
     return (
         <Wrapper>
             <Container className='p-5'>
                 <Row>
                     {SmartData.map((smartProducts, index) => (
-                        <Col key={index} lg={3} md={6} sm={6}>
+                        <Col key={index} lg={3} md={6} sm={6} style={{ marginTop: '8rem' }}>
                             <CardUI 
-                            image={smartProducts.SmartImage}
-                            name={smartProducts.SmartName}
-                            price={smartProducts.SmartPrice}
+                                onAddToWishlistClick={onAddToWishlist}
+                                onAddToCartClick={onAddToCart}
+                                product={smartProducts}
+                                image={smartProducts.image}
+                                name={smartProducts.name}
+                                price={smartProducts.price}
                             />
                         </Col>
                     ))}

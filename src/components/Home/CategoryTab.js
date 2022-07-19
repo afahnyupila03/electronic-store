@@ -7,7 +7,7 @@ const CategoryTab = () => {
     return (
         <Wrapper>
             <Container>
-                <Row className='p-5'>
+                <Row className='p-5' style={{marginTop: '8rem'}}>
                     {/* Laptop Category */}
                     <Col lg={3} md={6} sm={12} className='mb-5' style={{border: 'none'}}>
                         <Card style={{ border: 'none', textAlign: 'center' }}>

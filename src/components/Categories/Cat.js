@@ -2,11 +2,14 @@ import Wrapper from "../../Helpers/Wrapper";
 import CategoryTab from "../Home/CategoryTab";
 import TopSelling from "../Home/TopSelling";
 
-const Cat = () => {
+const Cat = ({ onAddToCart, onAddToWishlist }) => {
     return (
         <Wrapper>
             <CategoryTab />
-            <TopSelling />
+            <TopSelling 
+                onClickAddWishlist={onAddToWishlist}
+                onClickAddCart={onAddToCart}
+            />
         </Wrapper>
     );
 };

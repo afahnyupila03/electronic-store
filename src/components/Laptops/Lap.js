@@ -3,17 +3,20 @@ import Wrapper from "../../Helpers/Wrapper";
 import CardUI from "../../UI/CardUI";
 import LaptopData from "./LaptopData";
 
-const Lap = () => {
+const Lap = ({ onAddToCart, onAddToWishlist }) => {
     return (
         <Wrapper>
             <Container className='text-left p-5'>
                 <Row>
                     {LaptopData.map((laptopProducts, index) => (
-                        <Col key={index} lg={3} md={6} sm={12}>
-                            <CardUI 
-                                image={laptopProducts.LaptopImage}
-                                name={laptopProducts.LaptopName}
-                                price={laptopProducts.LaptopPrice}
+                        <Col key={index} lg={3} md={6} sm={12} style={{ marginTop: '8rem' }}>
+                            <CardUI
+                                onAddToWishlistClick={onAddToWishlist}
+                                onAddToCartClick={onAddToCart}
+                                product={laptopProducts}
+                                image={laptopProducts.image}
+                                name={laptopProducts.name}
+                                price={laptopProducts.price}
                             />
                         </Col>
                     ))}
