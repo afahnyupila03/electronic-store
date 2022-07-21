@@ -4,7 +4,7 @@ import CardUI from "../../UI/CardUI";
 import SmartData from "./Smartdata";
 
 
-const Smart = ({  onAddToCart, onAddToWishlist }) => {
+const Smart = ({  onAddToCart, onAddToWishlist, onAddcartCount, onAddwishlistCount }) => {
     return (
         <Wrapper>
             <Container className='p-5'>
@@ -13,6 +13,8 @@ const Smart = ({  onAddToCart, onAddToWishlist }) => {
                         <Col key={index} lg={3} md={6} sm={6} style={{ marginTop: '8rem' }}>
                             <CardUI 
                                 onAddToWishlistClick={onAddToWishlist}
+                                onAddCartCountClick={onAddcartCount}
+                                onAddWishlistCountClick={onAddwishlistCount}
                                 onAddToCartClick={onAddToCart}
                                 product={smartProducts}
                                 image={smartProducts.image}

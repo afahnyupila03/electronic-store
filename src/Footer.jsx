@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
+
     return (
         <Wrapper>
 
@@ -14,7 +15,7 @@ const Footer = () => {
                 <Container className='text-white p-5'>
                     <Row>
                         {/* About */}
-                        <Col lg={3} md={4} sm={6} className='mb-3'>
+                        <Col lg={3} md={6} sm={12} className='mb-3'>
                             <ul className='navbar-nav'>
                                 <h3>ABOUT US</h3>
                                 <p style={{ color: '#c0c0c0' }}>
@@ -43,7 +44,7 @@ const Footer = () => {
                             </ul>
                         </Col>
                         {/* Categories */}
-                        <Col lg={3} md={4} sm={6} className='mb-3'>
+                        <Col lg={3} md={6} sm={12} className='mb-3'>
                             <ul className='navbar-nav'>
                                 <h3>CATEGORIES</h3>
                                 <li className='nav-item'>
@@ -69,7 +70,7 @@ const Footer = () => {
                             </ul>
                         </Col>
                         {/* Information */}
-                        <Col lg={3} md={4} sm={6} className='mb-3'>
+                        <Col lg={3} md={6} sm={12} className='mb-3'>
                             <ul className='navbar-nav'>
                                 <h3>INFORMATION</h3>
                                 <li className='nav-item'>
@@ -92,7 +93,7 @@ const Footer = () => {
                             </ul>
                         </Col>
                         {/* Service */}
-                        <Col lg={3} md={4} sm={6} className='mb-3'>
+                        <Col lg={3} md={6} sm={12} className='mb-3'>
                             <ul className='navbar-nav'>
                                 <h3>SERVICE</h3>
                                 <li className='nav-item'>
@@ -132,19 +133,19 @@ const Footer = () => {
                     <Row>
                         <Col className='p-4'>
                             {/* Visa */}
-                            <Link to='/#'>
+                            <Link to='/#' style={{ color: "rgb(238,255,27)" }} >
                                 <i className="fa fa-cc-visa fa-2x mx-2" aria-hidden="true"></i>
                             </Link>
                             {/* PayPal */}
-                            <Link to='/#'>
+                            <Link to='/#' style={{ color: "rgb(230,190,138)" }} >
                                 <i className="fa fa-cc-paypal fa-2x mx-2" aria-hidden="true"></i>
                             </Link>
                             {/* Matster Card */}
-                            <Link to='/#'>
+                            <Link to='/#' style={{ color: "rgb(255,215,0)" }} >
                                 <i className="fa fa-cc-mastercard fa-2x mx-2" aria-hidden="true"></i>
                             </Link>
                             {/* Discover */}
-                            <Link to='/#'>
+                            <Link to='/#' style={{ color: "rgb(255,105,97)" }} >
                                 <i className="fa fa-cc-discover fa-2x mx-2" aria-hidden="true"></i>
                             </Link>
                         </Col>

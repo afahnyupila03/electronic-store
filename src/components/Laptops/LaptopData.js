@@ -182,17 +182,17 @@ const LaptopData = [
     },
     // New
     {
-        id: 48,
+        id: 14,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71edE2j5zLL._AC_UL604_SR604,400_.jpg',
         category: 'LAPTOP',
-        name: 'Acer Aspire 5 A515-56-32DK | 11th Gen Intel Core i3-1115G4 Processor | 4GB DDR4 | 128GB',
+        name: 'Acer Aspire 5 A515-56-32DK | 11th Gen Intel Core i3...',
         price: 289.99
     },
     {
         id: 49,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71zRcqRQGOL._AC_UL604_SR604,400_.jpg',
         category: 'LAPTOP',
-        name: 'Acer Swift 3 Laptop | AMD Ryzen 7 5700U Octa-Core Processor | 8GB LPDDR4X | 512GB',
+        name: 'Acer Swift 3 Laptop | AMD Ryzen 7 5700U Octa-Core | 8GB LPDDR4X | 512GB',
         price: 664.62
     }
 ];

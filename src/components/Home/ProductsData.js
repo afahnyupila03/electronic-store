@@ -26,7 +26,7 @@ const ProductsData = [
         id: 4,
         image: 'https://images-na.ssl-images-amazon.com/images/I/81HwzslD2oL._AC_UL604_SR604,400_.jpg',
         category: 'CAMERA',
-        name: 'Canon EOS R6 Full-Frame Mirrorless Camera',
+        name: 'Canon EOS R6 Full-Frame Mirrorless...',
         price: 2349.95
     },
     {

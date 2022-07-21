@@ -1,7 +1,7 @@
 import { Col , Row, Card, Button, Container } from 'react-bootstrap'
 import Wrapper from '../../Helpers/Wrapper';
 
-const CartUI = ({ onCart, props }) => {
+const CartUI = ({ onCart, cartRemove, reduceCountCart }) => {
 
     const totalPrice = onCart.reduce((total, product) => total + product.price * product.quantity, 0);
     const finalPrice = totalPrice.toFixed(2);
@@ -35,16 +35,13 @@ const CartUI = ({ onCart, props }) => {
                                                         <Card.Img variant='top' className='card-img' src={product.image} />
                                                     </div>
                                                     <div className="cart-ui__body__item__info mt-5">
-                                                        <h3>{product.quantity} x {product.name}</h3>
+                                                        <h3>{product.quantity} x {product.name.slice(0, 19)}</h3>
                                                     </div>
 
                                                     <div className="cart-ui-buttons mt-5">
-                                                        <Row>
-                                                            <Button type='submit' style={{ fontSize: '1rem' }} variant='danger' onClick={() => props.onAddToWishlistClick(props.product)}>
-                                                                Remove
-                                                            </Button>
-
-                                                        </Row>
+                                                        <Button type='submit' className='m-auto align-self-center d-flex' style={{ fontSize: '1rem' }} variant='danger' onClick={() => cartRemove(product) | reduceCountCart(product) }>
+                                                            Remove
+                                                        </Button>
                                                     </div>
 
                                                 </div>

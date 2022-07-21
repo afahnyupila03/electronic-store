@@ -182,17 +182,17 @@ const SmartData = [
     },
     // New
     {
-        id: 75,
+        id: 10,
         image: 'https://images-na.ssl-images-amazon.com/images/I/61U6oC65TTL._AC_UL604_SR604,400_.jpg',
         category: 'SMARTPHONE',
-        name: 'SAMSUNG Galaxy S22 Ultra, 512GB, 8K Camera & Video',
+        name: 'SAMSUNG Galaxy S22 Ultra, 512GB, 8K Camera...',
         price: 1249.99
     },
     {
-        id: 76,
+        id: 11,
         image: 'https://images-na.ssl-images-amazon.com/images/I/61U6oC65TTL._AC_UL604_SR604,400_.jpg',
         category: 'SMARTPHONE',
-        name: 'SAMSUNG Galaxy S22 Ultra, 256GB, 8K Camera & Video',
+        name: 'SAMSUNG Galaxy S22 Ultra, 256GB, 8K Camera...',
         price: 1149.99
     }
 ];

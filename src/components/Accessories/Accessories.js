@@ -4,7 +4,7 @@ import CardUI from "../../UI/CardUI";
 import AccessData from "./AccessData";
 
 
-const Accessories = ({ onAddToCart, onAddToWishlist }) => {
+const Accessories = ({ onAddToCart, onAddToWishlist, onAddwishlistCount, onAddcartCount }) => {
     return (
         <Wrapper>
             <Container className='p-5'>
@@ -14,6 +14,8 @@ const Accessories = ({ onAddToCart, onAddToWishlist }) => {
                             <CardUI 
                                 onAddToWishlistClick={onAddToWishlist}
                                 onAddToCartClick={onAddToCart}
+                                onAddCartCountClick={onAddcartCount}
+                                onAddWishlistCountClick={onAddwishlistCount}
                                 product={accessProducts}
                                 image={accessProducts.image}
                                 name={accessProducts.name}

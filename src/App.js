@@ -60,22 +60,129 @@ function App() {
     }
   }
 
+  // Function to remove from cart and store in local storage
+  const removeFromCart = (product) => {
+    const existingProduct = cart.find(p => p.id === product.id);
+    if (existingProduct.quantity === 1) {
+      const filteredCart = cart.filter(p => p.id !== existingProduct.id);
+      setCart(filteredCart);
+    } else {
+      existingProduct.quantity -= 1;
+      const filteredCart = cart.filter(p => p.id !== existingProduct.id);
+      setCart([...filteredCart, existingProduct]);
+    }
+  }
+  // Function to remove from wishlist and store in local storage
+  const removeFromWishlist = (product) => {
+    const filteredWishlist = wishlist.filter(p => p.id !== product.id);
+    setWishlist(filteredWishlist);
+  }
+
+  // Cart Counter
+  const [cartCount, setCartCount] = useState(0);
+  const addCartCount = () => {
+    setCartCount (cartCount + 1);
+  };
+  const reduceCartCount = () => {
+    setCartCount (cartCount - 1);
+  };
+
+  // Wishlist Counter
+  const [wishlistCount, setWishlistCount] = useState(0);
+  const addWishlistCount = (product) => {
+    const existingProduct = wishlist.find(p => p.id === product.id);
+    if (existingProduct) {
+      return;
+    } else {
+      setWishlistCount (wishlistCount + 1);
+    }
+  };
+  const reduceWishlistCount = () => {
+    setWishlistCount (wishlistCount - 1)
+  };
+
 
   return (
     <div className="App">
-      <NavbarTab />
+      <NavbarTab onCartCount={cartCount} onWishlistCount={wishlistCount} />
         <Routes>
           {/* Navbar Links */}
-            <Route path='/' element={<Home onAddToWishlist={addToWishlist} onAddToCart={addToCart} />} ></Route>
-            <Route exact={true} path='/categories' element={<Cat onAddToWishlist={addToWishlist} onAddToCart={addToCart} />} />
-            <Route exact={true} path='/cameras' element={<Cam onAddToWihslist={addToWishlist} onAddToCart={addToCart} />} />
-            <Route exact={true} path='/laptops' element={<Lap onAddToWishlist={addToWishlist} onAddToCart={addToCart} />} />
-            <Route exact={true} path='/smartphones' element={<Smart onAddToWishlist={addToWishlist} onAddToCart={addToCart} />} />
-            <Route exact={true} path='/accessories' element={<Accessories onAddToWishlist={addToWishlist} onAddToCart={addToCart} />} />
+            {/* Home */}
+            <Route path='/' element={<Home 
+              onAddwishlistCount={addWishlistCount}
+              onAddcartCount={addCartCount} 
+              onAddToWishlist={addToWishlist} 
+              onAddToCart={addToCart} 
+            />} ></Route>
+            {/* Categories */}
+            <Route exact={true} path='/categories' element={<Cat
+                onAddwishlistCount={addWishlistCount}
+                onAddcartCount={addCartCount}
+                onAddToWishlist={addToWishlist} 
+                onAddToCart={addToCart} 
+              />}
+            />
+            {/* Cameras */}
+            <Route exact={true} path='/cameras' element={<Cam
+                onAddwishlistCount={addWishlistCount}
+                onAddcartCount={addCartCount}
+                onAddToWihslist={addToWishlist} 
+                onAddToCart={addToCart} 
+
+              />} 
+            />
+            {/* Laptops */}
+            <Route exact={true} path='/laptops' element={<Lap 
+                onAddwishlistCount={addWishlistCount}
+                onAddcartCount={addCartCount}
+                onAddToWishlist={addToWishlist} 
+                onAddToCart={addToCart} 
+
+              />}
+            />
+            {/* SmartPhones */}
+            <Route exact={true} path='/smartphones' element={<Smart 
+                onAddToWishlist={addToWishlist} 
+                onAddToCart={addToCart} 
+                onAddwishlistCount={addWishlistCount}
+                onAddcartCount={addCartCount}
+              />} 
+            />
+            {/* Accessories */}
+            <Route exact={true} path='/accessories' element={<Accessories 
+                onAddToWishlist={addToWishlist} 
+                onAddToCart={addToCart} 
+                onAddwishlistCount={addWishlistCount}
+                onAddcartCount={addCartCount}
+              />}
+            />
+            {/* Login */}
             <Route exact={true} path='/login' element={<Login />} />
+            {/* Register */}
             <Route exact={true} path='/register' element={<Register />} />
-            <Route exact={true} path='/wishlist' element={<WishList onAddToWishlist={addToWishlist} onAddToCart={addToCart} wishlists={wishlist} />} />
-            <Route exact={true} path='/cart' element={<Cart onAddToWishlist={addToWishlist} onAddToCart={addToCart} carts={cart} />} />
+            {/* Wishlist */}
+            <Route exact={true} path='/wishlist' element={<WishList 
+                onRemoveFromWishlist={removeFromWishlist} 
+                onAddToWishlist={addToWishlist} 
+                onAddToCart={addToCart}
+                onAddwishlistCount={addWishlistCount}
+                onAddcartCount={addCartCount}
+                onReduceWishlistCount={reduceWishlistCount}
+                wishlists={wishlist} 
+
+              />} 
+            />
+            {/* cart */}
+            <Route exact={true} path='/cart' element={<Cart 
+                  onRemoveFromCart={removeFromCart} 
+                  onAddToWishlist={addToWishlist} 
+                  onAddToCart={addToCart}
+                  onAddwishlistCount={addWishlistCount}
+                  onAddcartCount={addCartCount}
+                  onReduceCartCount={reduceCartCount}
+                  carts={cart} 
+                />} 
+              />
         </Routes>
       <Footer />
     </div>

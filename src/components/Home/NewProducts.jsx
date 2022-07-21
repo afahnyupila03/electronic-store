@@ -4,15 +4,17 @@ import ProductsData from "./ProductsData";
 import '../styles.css';
 
 
-const NewProducts = ({onClickAddWishlist, onClickAddCart}) => {
+const NewProducts = ({ onClickAddWishlist, onClickAddCart, onCountCart, onCountWishlist }) => {
     return (
         <Container>
             <Row>
                 <h1 className='p-5 barlow'>NEW PRODUCTS</h1>
                 {ProductsData.map( (newProducts, index) => (
-                    <Col key={index} lg={4} md={6} sm={2}>
+                    <Col key={index} lg={4} md={6} sm={6}>
                         <CardUI 
                             onAddToWishlistClick={onClickAddWishlist}
+                            onAddWishlistCountClick={onCountWishlist}
+                            onAddCartCountClick={onCountCart}
                             onAddToCartClick={onClickAddCart}
                             product={newProducts}
                             image={newProducts.image}

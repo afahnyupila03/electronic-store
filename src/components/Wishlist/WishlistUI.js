@@ -1,7 +1,10 @@
 import Wrapper from "../../Helpers/Wrapper";
 import { Row, Col, Card, Button } from 'react-bootstrap';
 
-const WishlistUi = ({ onWishlist, props }) => {
+const WishlistUi = ({ onWishlist, wishlistRemove, reduceCountWishlist }) => {
+
+
+
     return (
         <Wrapper style={{marginTop: '8rem'}}>
             <div className="cart-ui" style={{ marginTop: '8rem' }}>
@@ -17,23 +20,21 @@ const WishlistUi = ({ onWishlist, props }) => {
                         <Row>
                             {onWishlist.length === 0 ? <h1>Your wishlist is empty</h1> : (
                                 onWishlist.map((product, index) => (
-                                    <Col key={index} lg={3} md={6} sm={12}>
+                                    <Col key={index} lg={4} md={6} sm={12}>
                                         <Card style={{ border: 'none' }} className='mb-3 p-3'>
                                             <div className="cart-ui__body__item" key={product.id}>
 
                                                 <div className="cart-ui__body__item__image">
                                                     <Card.Img variant='top' className='card-img' src={product.image} />
                                                 </div>
-                                                <div className="cart-ui__body__item__info mt-5">
-                                                    <h3>{product.name}</h3>
+                                                <div className="cart-ui__body__item__info mt-5 text-center">
+                                                    <h3>{product.name.slice(0, 19)}</h3>
                                                 </div>
 
                                                 <div className="cart-ui-buttons mt-5">
-                                                    <Row>
-                                                        <Button type='submit' style={{fontSize: '1.5rem'}} variant='white'>
-                                                            Remove
-                                                        </Button>
-                                                    </Row>
+                                                    <Button type='submit' onClick={() => wishlistRemove(product) | reduceCountWishlist(product) } className='m-auto align-self-center d-flex' style={{fontSize: '1.5rem'}} variant='danger'>
+                                                        Remove
+                                                    </Button>
                                                 </div>
 
                                             </div>

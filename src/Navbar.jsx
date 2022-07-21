@@ -2,16 +2,16 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Wrapper from './Helpers/Wrapper';
 
-const NavbarTab = () => {
+const NavbarTab = ({ onCartCount, onWishlistCount }) => {
 
     return (
         <Wrapper>
             <Navbar collapseOnSelect expand="lg" fixed='top' style={{ backgroundColor: '#004040'}} className='p-2' variant="gray">
                 <Container className='barlow'>
                     <Link to='/' className='navbar-brand text-danger' style={{ textDecoration: 'none', fontSize: '2rem' }}>
-                        Electro.
+                        <img src='https://www.svgrepo.com/show/68604/bolt.svg' alt='bolt' style={{ width: '2.2rem' }} />Electro.
                     </Link>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{color: '#c0c0c0'}}>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" navbar-toggler='true' style={{color: '#c0c0c0'}}>
                         <h1>Menu</h1>
                     </Navbar.Toggle>
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -41,9 +41,15 @@ const NavbarTab = () => {
                             </Link>
                             <Link to='./wishlist' className='nav-link' style={{ textDecoration: 'none', fontSize: '1.5rem', color: '#c0c0c0' }}>
                                 <i className="fa fa-heart mx-1" aria-hidden="true"></i>
+                                <span className=" top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    {onWishlistCount}
+                                </span>
                             </Link>
                             <Link to='/cart' className='nav-link' style={{ textDecoration: 'none', fontSize: '1.5rem', color: '#c0c0c0' }}>
                                 <i className="fa fa-shopping-cart mx-1" aria-hidden="true"></i>
+                                <span className=" top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    {onCartCount}
+                                </span>
                             </Link>
                         </Nav>
                     </Navbar.Collapse>

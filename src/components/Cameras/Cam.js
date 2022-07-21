@@ -3,14 +3,16 @@ import Wrapper from "../../Helpers/Wrapper";
 import CardUI from "../../UI/CardUI";
 import CamerData from './CameraData';
 
-const Cam = ({ onAddToCart, onAddToWihslist }) => {
+const Cam = ({ onAddToCart, onAddToWihslist, onAddwishlistCount, onAddcartCount }) => {
     return (
         <Wrapper>
             <Container className='p-5'>
                 <Row>
                     {CamerData.map((cameraProducts, index) => (
                         <Col key={index} lg={3} md={6} sm={6} style={{ marginTop: '8rem' }}>
-                            <CardUI  
+                            <CardUI
+                                onAddCartCountClick={onAddcartCount}
+                                onAddWishlistCountClick={onAddwishlistCount}
                                 onAddToWishlistClick={onAddToWihslist}
                                 onAddToCartClick={onAddToCart}
                                 product={cameraProducts}

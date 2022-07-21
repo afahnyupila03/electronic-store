@@ -11,7 +11,7 @@ const SellingData = [
         id: 8,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71W4kT2gdcL._AC_UL604_SR604,400_.jpg',
         category: 'LAPTOP',
-        name: 'HP Elitebook 745 G5 14in FHD Laptop PC, AMD Ryzen 5',
+        name: 'HP Elitebook 745 G5 14in FHD Laptop, AMD Ryzen 5',
         price: 499.99
     },
     {
@@ -25,35 +25,35 @@ const SellingData = [
         id: 10,
         image: 'https://images-na.ssl-images-amazon.com/images/I/61U6oC65TTL._AC_UL604_SR604,400_.jpg',
         category: 'SMARTPHONE',
-        name: 'SAMSUNG Galaxy S22 Ultra, 512GB, 8K Camera & Video',
+        name: 'Samsung Galaxy S22 Ultra, 512GB, 8K Camera & Video',
         price: 1249.99
     },
     {
         id: 11,
         image: 'https://images-na.ssl-images-amazon.com/images/I/61U6oC65TTL._AC_UL604_SR604,400_.jpg',
         category: 'SMARTPHONE',
-        name: 'SAMSUNG Galaxy S22 Ultra Cell Phone, 256GB, 8K Camera & Video',
+        name: 'Samsung Galaxy S22 Ultra, 256GB, 8K Camera & Video',
         price: 1149.99
     },
     {
         id: 12,
         image: 'https://images-na.ssl-images-amazon.com/images/I/61oQtjPpM-L._AC_UL604_SR604,400_.jpg',
         category: 'SMARTPHONE',
-        name: 'Google Pixel 6 – 5G Android Phone - Ultrawide Lens - 128GB - Stormy Black',
+        name: 'Google Pixel 6 – 5G Android Phone - 128GB - Stormy Black',
         price: 700.00
     },
     {
         id: 13,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71GbORP-umL._AC_UL604_SR604,400_.jpg',
         category: 'SMARTPHONE',
-        name: 'Motorola One 5G Ace | 2021 | 2-Day battery | 6/128GB | 48MP Camera | Hazy Silver',
+        name: 'Motorola One 5G | 2-Day battery | 6/128GB | Hazy Silver',
         price: 249.99
     },
     {
         id: 14,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71edE2j5zLL._AC_UL604_SR604,400_.jpg',
         category: 'LAPTOP',
-        name: 'Acer Aspire 5 A515-56-32DK | 11th Gen Intel Core i3-1115G4 Processor | 4GB DDR4 | 128GB',
+        name: 'Acer Aspire 5 A515-56-32DK | 11th Gen Intel Core i3...',
         price: 289.99
     },
     {

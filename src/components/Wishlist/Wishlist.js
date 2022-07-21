@@ -4,17 +4,19 @@ import TopSelling from "../Home/TopSelling";
 import WishlistUi from "./WishlistUI";
 
 
-const WishList = ({ wishlists, onAddToWishlist, onAddToCart }) => {
+const WishList = ({ wishlists, onReduceWishlistCount, onAddToWishlist, onAddToCart, onRemoveFromWishlist, onAddcartCount, onAddwishlistCount }) => {
 
     
 
     return (
         <Wrapper>
             <Container>
-                <WishlistUi onWishlist={wishlists} />
+                <WishlistUi onWishlist={wishlists} reduceCountWishlist={onReduceWishlistCount} wishlistRemove={onRemoveFromWishlist} />
                 <TopSelling 
                     onClickAddCart={onAddToCart} 
-                    onClickAddWishlist={onAddToWishlist}  
+                    onClickAddWishlist={onAddToWishlist}
+                    onCountCart={onAddcartCount}
+                    onCountWishlist={onAddwishlistCount}
                 />
             </Container>
         </Wrapper>

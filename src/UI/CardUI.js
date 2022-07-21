@@ -22,11 +22,11 @@ const CardUI = (props) => {
                     </Card.Text>
                     <Row>
                         <Col>
-                            <Button type='submit' variant='danger' onClick={() => props.onAddToWishlistClick(props.product)}>
+                            <Button type='submit' variant='danger' onClick={() => props.onAddToWishlistClick(props.product) | props.onAddWishlistCountClick(props.product) }>
                                 <i className="fa fa-heart" aria-hidden="true"></i>
                             </Button></Col>
                         <Col>
-                            <Button type='submit' variant='danger' onClick={() => props.onAddToCartClick(props.product)}>
+                            <Button type='submit' variant='danger' onClick={() => props.onAddToCartClick(props.product) | props.onAddCartCountClick(props.product) }>
                                 <i className="fa fa-shopping-cart" aria-hidden="true"></i>
                             </Button>
                         </Col>

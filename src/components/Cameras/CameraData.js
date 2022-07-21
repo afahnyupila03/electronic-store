@@ -105,7 +105,7 @@ const CamerData = [
     {
         id: 94,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71TSinb4usL._AC_UL302_SR302,200_.jpg',
-        name: 'Nikon D3500 W/ AF-P DX NIKKOR 18-55mm f/3.5-5.6G',
+        name: 'Nikon D3500 W/ AF-P DX NIKKOR 18-55mm f/5.6G',
         price: 480.00
     },
     {
@@ -133,49 +133,49 @@ const CamerData = [
         price: 71.99
     },
     {
-        id: 23,
+        id: 99,
         image: 'https://images-na.ssl-images-amazon.com/images/I/81HwzslD2oL._AC_UL604_SR604,400_.jpg',
         name: 'Canon EOS R6 Full-Frame Mirrorless Camera',
         price: 2349.95
     },
     {
-        id: 24,
+        id: 100,
         image: 'https://images-na.ssl-images-amazon.com/images/I/41a0leiV5DL._AC_UL604_SR604,400_.jpg',
         name: 'Canon PowerShot SX420 Digital Camera',
         price: 599.49
     },
     {
-        id: 25,
+        id: 4,
         image: 'https://images-na.ssl-images-amazon.com/images/I/81FuaXgqj0L._AC_UL604_SR604,400_.jpg',
         name: 'Canon EOS R Mirrorless Full Frame Camera - Vlogging Camera 4K, Content Creator Camera',
         price: 1359.99
     },
     {
-        id: 26,
+        id: 101,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71zXEZWtHeL._AC_UL604_SR604,400_.jpg',
         name: 'Digital Camera,VJIANGER 4K 48MP Mini Camera for Photography 2.8" Vlogging Camera',
         price: 69.99
     },
     {
-        id: 27,
+        id: 102,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71zs+RZUggL._AC_UL604_SR604,400_.jpg',
-        name: 'Sony Alpha a6400 Mirrorless Camera: Compact APS-C Interchangeable Lens Digital Camera',
+        name: 'Sony Alpha a6400 Mirrorless Camera: Compact APS-C Interchangeable Lens',
         price: 1298.00
     },
     {
-        id: 28,
+        id: 103,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71QgDgqtw0L._AC_UL604_SR604,400_.jpg',
         name: 'Canon PowerShot G7X Mark III Digital 4K Vlogging Camera, Vertical 4K Video Support',
         price: 589.99
     },
     {
-        id: 29,
+        id: 104,
         image: 'https://images-na.ssl-images-amazon.com/images/I/416b8xNfDJL._AC_UL604_SR604,400_.jpg',
         name: 'Canon PowerShot Digital Camera [G7 X Mark II] with Wi-Fi & NFC, LCD Screen, and 1-Inch Sensor',
         price: 465.00
     },
     {
-        id: 1,
+        id: 105,
         image: 'https://images-na.ssl-images-amazon.com/images/I/712T9W9EsKL._AC_UL604_SR604,400_.jpg',
         name: 'Minolta 20 Mega Pixels High Wi-Fi Digital Camera with 35x Optical Zoom, 1080p HD Video',
         price: 200.91
@@ -187,12 +187,6 @@ const CamerData = [
         category: 'CAMERA',
         name: 'Canon EOS M6 Mark II Mirrorless Camera + 15-45mm Lens, Dual Pixel CMOS Auto Focus',
         price: 249.99
-    },
-    // Adjust ID number
-    {   id: 19,
-        image: 'https://images-na.ssl-images-amazon.com/images/I/917LEZ+it3L._AC_UL604_SR604,400_.jpg',
-        name: 'Panasonic LUMIX FZ80 4K, 18.1 Megapixel Video Camera, VARIO 20-1200mm Lens, F2.8-5.9 Aperture',
-        price: 397.99
     }
 ];
 
