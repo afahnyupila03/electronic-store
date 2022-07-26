@@ -9,21 +9,29 @@ const Login = () => {
     const emailRef = useRef();
     const passwordRef = useRef();
 
+    
+    
+
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        const LoginData = {
-            username: usernameRef.current.value,
-            email: emailRef.current.value,
+        const usernameInput = {
+            username: usernameRef.current.value
+        }
+        const emailInput = {
+            email: emailRef.current.value
+        }
+        const passwordInput = {
             password: passwordRef.current.value
-        };
+        }
 
-        console.log(LoginData);
-
-        usernameRef.current.value = "";
+        console.log(usernameInput);
+        console.log(emailInput);
+        console.log(passwordInput);
+        usernameRef.current.value  = "";
         emailRef.current.value = "";
         passwordRef.current.value = "";
-        
+
     }
 
     return (
@@ -46,18 +54,42 @@ const Login = () => {
 
                                 <h2 className='text-center text-danger mb-3'> Login </h2>
                                 
-                                <Form.Group className='mb-4'>
-                                    <Form.Label>Username</Form.Label>
-                                    <Form.Control type='text' placeholder='Enter username' ref={usernameRef} />
-                                </Form.Group>
-                                <Form.Group controlId="formBasicEmail" className='mb-4'>
-                                    <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" autoComplete="true" ref={emailRef} />
-                                </Form.Group>
-                                <Form.Group controlId="formBasicPassword" className='mb-4'>
-                                    <Form.Label>Password</Form.Label>
-                                    <Form.Control type="password" placeholder="Password" autoComplete="false" ref={passwordRef} />
-                                </Form.Group>
+                                {/* Username */}
+                                    <Form.Group className = "mb-4" >
+                                        <Form.Label>Username</Form.Label>
+                                        <Form.Control 
+                                            type='text' 
+                                            placeholder='Enter username' 
+                                            autoComplete="true"
+                                            spellCheck="true"
+                                            ref={usernameRef}
+                                        />
+                                    </Form.Group>
+                                
+
+                                {/* Email */}
+                                    <Form.Group controlId="formBasicEmail" className='mb-4'>
+                                        <Form.Label>Email address</Form.Label>
+                                        <Form.Control 
+                                            type="email" 
+                                            placeholder="Enter email" 
+                                            autoComplete="true" 
+                                            ref={emailRef}
+                                        />
+                                    </Form.Group>
+
+                                {/* Password */}
+                                    <Form.Group controlId="formBasicPassword" className='mb-4'>
+                                        <Form.Label>Password</Form.Label>
+                                        <Form.Control 
+                                            type="password" 
+                                            placeholder="Password" 
+                                            autoComplete="false" 
+                                            ref={passwordRef}
+                                        />
+                                    </Form.Group>
+
+                                {/* Checkbox */}
                                 <Form.Group controlId="formBasicCheckbox" className='mb-4'>
                                     <Form.Check type="checkbox" className='text-danger' label="Remember next time!!" />
                                 </Form.Group>
@@ -66,6 +98,8 @@ const Login = () => {
                                         Forgot Password?
                                     </Link>
                                 </Form.Group>
+
+                                {/* Login Button */}
                                 <Button variant="danger" type="submit" className='mb-3'>
                                     Login
                                 </Button>

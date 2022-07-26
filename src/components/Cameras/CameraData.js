@@ -3,13 +3,13 @@ const CamerData = [
     {
         id: 77,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71EWRyqzw0L._AC_UL604_SR604,400_.jpg',
-        name: 'Canon EOS Rebel T7 DSLR Camera with 18-55mm Lens',
+        name: 'Canon EOS Rebel T7 DSLR Camera with 18-55mm Lens | Built-in Wi-Fi | 24.1 MP CMOS Sensor | DIGIC 4+ Image Processor and Full HD Videos',
         price: 409.99
     },
     {
         id: 78,
         image: 'https://images-na.ssl-images-amazon.com/images/I/51-Qkq5-LHL._AC_UL604_SR604,400_.jpg',
-        name: 'KODAK Printomatic Digital Instant Print Camera',
+        name: 'KODAK Printomatic Digital Instant Print Camera - Full Color Prints On ZINK 2x3" Sticky-Backed Photo Paper (Pink) Print Memories Instantly',
         price: 49.99
     },
     {
@@ -21,7 +21,7 @@ const CamerData = [
     {
         id: 80,
         image: 'https://images-na.ssl-images-amazon.com/images/I/917LEZ+it3L._AC_UL604_SR604,400_.jpg',
-        name: 'Panasonic LUMIX FZ80 4K Digital Camera',
+        name: 'Panasonic LUMIX FZ80 4K Digital Camera, 18.1 Megapixel Video Camera, 60X Zoom DC VARIO 20-1200mm Lens, F2.8-5.9 Aperture, Power O.I.S. Stabilization, Touch Enabled 3-Inch LCD, Wi-Fi, DC-FZ80K (Black)',
         price: 347.99
     },
     {
@@ -33,91 +33,91 @@ const CamerData = [
     {
         id: 82,
         image: 'https://images-na.ssl-images-amazon.com/images/I/81QHxabex8L._AC_UL604_SR604,400_.jpg',
-        name: 'Kodak PIXPRO Friendly Zoom FZ43-BK 16MP',
+        name: 'Kodak PIXPRO Friendly Zoom FZ43-BK 16MP Digital Camera with 4X Optical Zoom and 2.7" LCD Screen (Black)',
         price:  199.99
     },
     {
         id: 83,
-        image: 'https://images-na.ssl-images-amazon.com/images/I/71L93vqOVuS._AC_UL604_SR604,400_.jpg',
-        name: 'Kodak PIXPRO Astro Zoom AZ252-WH 16MP',
-        price: 144.99
+        image: 'https://images-na.ssl-images-amazon.com/images/I/718DfOPtpqL._AC_UL302_SR302,200_.jpg',
+        name: 'Sony RX100 VII Premium Compact Camera with 1.0-type stacked CMOS sensor (DSCRX100M7)',
+        price: 1298.00
     },
     {
         id: 84,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71woYLtQs4L._AC_UL604_SR604,400_.jpg',
-        name: 'Canon EOS M50 Mark II + EF-M 15-45mm is STM',
+        name: 'Canon EOS M50 Mark II + EF-M 15-45mm is STM Kit Black',
         price: 675.00
     },
     {
         id: 85,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71ruruIcqDL._AC_UL604_SR604,400_.jpg',
-        name: 'Polaroid IS048 Digital Camera - Small Lightweight Waterproof ',
+        name: 'Polaroid IS048 Digital Camera - Small Lightweight Waterproof Instant Sharing 16 MP Digital Portable Handheld Action Camera (Black)',
         price: 49.99
     },
     {
         id: 86,
         image: 'https://images-na.ssl-images-amazon.com/images/I/81pgsjFGpmL._AC_UL604_SR604,400_.jpg',
-        name: 'Vlogging Camera, 4K Digital Camera for YouTube with WiFi',
+        name: 'Vlogging Camera, 4K Digital Camera for YouTube with WiFi, 16X Digital Zoom, 180 Degree Flip Screen TopCam6 Zoom, 180 Degree Flip Screen, Wide Angle Lens, Macro Lens, 2 Batteries and 32GB TF Card',
         price: 138.88
     },
     {
         id: 87,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71LPbU9sO5L._AC_UL604_SR604,400_.jpg',
-        name: 'Sony Alpha 7 IV Full-frame Mirrorless Interchangeable Lens Camera',
+        name: 'Sony Alpha 7 IV Full-frame Mirrorless Interchangeable Lens Camera,Body Only , Black',
         price: 2498.00
     },
     {
         id: 88,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71zS4qgZgHL._AC_UL302_SR302,200_.jpg',
-        name: 'Sony Alpha ZV-E10 - APS-C Interchangeable Lens Mirrorless Vlog Camera Kit',
+        name: 'Sony Alpha ZV-E10 - APS-C Interchangeable Lens Mirrorless Vlog Camera Kit - Black',
         price: 904.95
     },
     {
         id: 89,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71Psv2n4YqL._AC_UL302_SR302,200_.jpg',
-        name: 'Digital Camera, Lecran FHD 1080P 36.0 Mega Pixels',
+        name: 'Digital Camera, Lecran FHD 1080P 36.0 Mega Pixels Vlogging Camera with 16X Digital Zoom, LCD Screen, Compact Portable Mini Cameras for Students, Teens, Kids (Green)',
         price: 453.99
     },
     {
         id: 90,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71BgZrcqaAL._AC_UL302_SR302,200_.jpg',
-        name: 'Digital Camera, Saneen 4K Vlogging Cameras',
+        name: 'Digital Camera, 4K Vlogging Cameras for Photography & YouTube, 36MP 16X Digital Zoom 30PFS Point and Shoot Camera for Kids, Beginners, Include 32GB SD Card & 2 Rechargeable Batteries - Black',
         price: 65.99
     },
     {
         id: 91,
         image: 'https://images-na.ssl-images-amazon.com/images/I/61Ny4pf4abL._AC_UL302_SR302,200_.jpg',
-        name: 'Digital Camera 2.7K 48MP Vlogging Camera',
+        name: 'Digital Camera 2.7K 48MP Vlogging Camera, Auto Focus Digital Point and Shoot Camera with 32GB Memory Card,16X Zoom, Time Lapse Digital Cameras for Kids Teenagers Students Boys Girls, Green',
         price: 73.99
     },
     {
         id: 92,
         image: 'https://images-na.ssl-images-amazon.com/images/I/61yI7VEchIL._AC_UL302_SR302,200_.jpg',
-        name: 'KODAK Printomatic Digital Instant Print Camera',
+        name: 'KODAK Printomatic Digital Instant Print Camera - Full Color Prints On ZINK 2x3" Sticky-Backed Photo Paper (Grey) Print Memories Instantly',
         price: 49.99
     },
     {
         id: 93,
         image: 'https://images-na.ssl-images-amazon.com/images/I/61mPQfLUmzL._AC_UL302_SR302,200_.jpg',
-        name: 'KODAK Printomatic Digital Instant Print Camera',
+        name: 'KODAK Printomatic Digital Instant Print Camera - Full Color Prints On ZINK 2x3" Sticky-Backed Photo Paper (Yellow) Print Memories Instantly',
         price: 49.99
     },
     {
         id: 94,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71TSinb4usL._AC_UL302_SR302,200_.jpg',
-        name: 'Nikon D3500 W/ AF-P DX NIKKOR 18-55mm f/5.6G',
+        name: 'Nikon D3500 W/ AF-P DX NIKKOR 18-55mm f/3.5-5.6G VR Black',
         price: 480.00
     },
     {
         id: 95,
         image: 'https://images-na.ssl-images-amazon.com/images/I/81AUQk0y5vL._AC_UL302_SR302,200_.jpg',
-        name: 'Canon EOS Rebel T8i EF-S 18-55mm is STM Lens Kit',
+        name: 'Canon EOS Rebel T8i EF-S 18-55mm is STM Lens Kit - Black',
         price: 899.00
     },
     {
         id: 96,
         image: 'https://images-na.ssl-images-amazon.com/images/I/81xVbbwlqlL._AC_UL302_SR302,200_.jpg',
-        name: 'Panasonic LUMIX FZ300 Long Zoom Digital Camera',
+        name: 'Panasonic LUMIX FZ300 Long Zoom Digital Camera Features 12.1 Megapixel, 1/2.3-Inch Sensor, 4K Video, WiFi, Splash & Dustproof Camera Body, LEICA DC 24X F2.8 Zoom Lens - DMC-FZ300K - (Black) USA',
         price: 199.99
     },
     {
@@ -128,56 +128,56 @@ const CamerData = [
     },
     {
         id: 98,
-        image: 'https://images-na.ssl-images-amazon.com/images/I/710lgDMvutL._AC_UL604_SR604,400_.jpg',
-        name: 'Saneen Digital Camera, 4K Cameras for Photography',
-        price: 71.99
+        image: 'https://images-na.ssl-images-amazon.com/images/I/71B5nBpK7yL._AC_UL302_SR302,200_.jpg',
+        name: 'Panasonic LUMIX ZS100 4K Digital Camera, 20.1 Megapixel 1-Inch Sensor 30p Video Camera, 10X LEICA DC VARIO-ELMARIT Lens, F2.8-5.9 Aperture, HYBRID O.I.S. Stabilization, 3-Inch LCD, DMC-ZS100K (Black)',
+        price: 597.99
     },
     {
         id: 99,
         image: 'https://images-na.ssl-images-amazon.com/images/I/81HwzslD2oL._AC_UL604_SR604,400_.jpg',
-        name: 'Canon EOS R6 Full-Frame Mirrorless Camera',
+        name: 'Canon EOS R6 Full-Frame Mirrorless Camera with 4K Video, Full-Frame CMOS Senor, DIGIC X Image Processor, Dual UHS-II SD Memory Card Slots, and Up to 12 fps with Mechnical Shutter, Body Only, Black',
         price: 2349.95
     },
     {
         id: 100,
         image: 'https://images-na.ssl-images-amazon.com/images/I/41a0leiV5DL._AC_UL604_SR604,400_.jpg',
-        name: 'Canon PowerShot SX420 Digital Camera',
+        name: 'Canon PowerShot SX420 Digital Camera w/ 42x Optical Zoom - Wi-Fi & NFC Enabled (Black)',
         price: 599.49
     },
     {
         id: 4,
         image: 'https://images-na.ssl-images-amazon.com/images/I/81FuaXgqj0L._AC_UL604_SR604,400_.jpg',
-        name: 'Canon EOS R Mirrorless Full Frame Camera - Vlogging Camera 4K, Content Creator Camera',
+        name: 'Canon EOS R Mirrorless Full Frame Camera - Vlogging Camera 4K, Content Creator Camera, Wi-Fi, 30.3 MP Full-Frame CMOS Sensor, Dual Pixel CMOS AF (Body Only)',
         price: 1359.99
     },
     {
         id: 101,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71zXEZWtHeL._AC_UL604_SR604,400_.jpg',
-        name: 'Digital Camera,VJIANGER 4K 48MP Mini Camera for Photography 2.8" Vlogging Camera',
+        name: 'VJIANGER 4K 48MP Ditial Camera for Photography 2.8" Vlogging Camera for YouTube Compact Portable Video Camera with Manualfocus, 16X Digital Zoom, 2 Batteries, 32GB SD Card, Tripod(Black)',
         price: 69.99
     },
     {
         id: 102,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71zs+RZUggL._AC_UL604_SR604,400_.jpg',
-        name: 'Sony Alpha a6400 Mirrorless Camera: Compact APS-C Interchangeable Lens',
+        name: 'Sony Alpha a6400 Mirrorless Camera: Compact APS-C Interchangeable Lens Digital Camera with Real-Time Eye Auto Focus, 4K Video, Flip Screen & 18-135mm Lens - E Mount Compatible Cameras - ILCE-6400M/B',
         price: 1298.00
     },
     {
         id: 103,
         image: 'https://images-na.ssl-images-amazon.com/images/I/71QgDgqtw0L._AC_UL604_SR604,400_.jpg',
-        name: 'Canon PowerShot G7X Mark III Digital 4K Vlogging Camera, Vertical 4K Video Support',
+        name: 'Canon PowerShot G7X Mark III Digital 4K Vlogging Camera, Vertical 4K Video Support with Wi-Fi, NFC and 3.0-Inch Touch Tilt LCD, Black',
         price: 589.99
     },
     {
         id: 104,
         image: 'https://images-na.ssl-images-amazon.com/images/I/416b8xNfDJL._AC_UL604_SR604,400_.jpg',
-        name: 'Canon PowerShot Digital Camera [G7 X Mark II] with Wi-Fi & NFC, LCD Screen, and 1-Inch Sensor',
+        name: 'Canon PowerShot Digital Camera [G7 X Mark II] with Wi-Fi & NFC, LCD Screen, and 1-Inch Sensor - Black, 100 - 1066C001',
         price: 465.00
     },
     {
         id: 105,
         image: 'https://images-na.ssl-images-amazon.com/images/I/712T9W9EsKL._AC_UL604_SR604,400_.jpg',
-        name: 'Minolta 20 Mega Pixels High Wi-Fi Digital Camera with 35x Optical Zoom, 1080p HD Video',
+        name: 'Minolta 20 Mega Pixels High Wi-Fi Digital Camera with 35x Optical Zoom, 1080p HD Video & 3" LCD, Black (MN35Z-BK)',
         price: 200.91
     },
     // New
@@ -185,8 +185,14 @@ const CamerData = [
         id: 18,
         image: 'https://images-na.ssl-images-amazon.com/images/I/61iWnsuXE6L._AC_UL302_SR302,200_.jpg',
         category: 'CAMERA',
-        name: 'Canon EOS M6 Mark II Mirrorless Camera + 15-45mm Lens, Dual Pixel CMOS Auto Focus',
+        name: 'Canon EOS M6 Mark II Mirrorless Camera for Vlogging + 15-45mm Lens, CMOS, APS-C Sensor, Dual Pixel CMOS Auto Focus, Wi-Fi,Bluetooth and 4K Video',
         price: 249.99
+    },
+    {
+        id : 138,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/61SY905+enL._AC_UL302_SR302,200_.jpg',
+        name: 'Sony DSCW800/B 20.1 MP Digital Camera (Black)',
+        price: 127.90
     }
 ];
 

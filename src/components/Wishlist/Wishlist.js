@@ -11,7 +11,7 @@ const WishList = ({ wishlists, onReduceWishlistCount, onAddToWishlist, onAddToCa
     return (
         <Wrapper>
             <Container>
-                <WishlistUi onWishlist={wishlists} reduceCountWishlist={onReduceWishlistCount} wishlistRemove={onRemoveFromWishlist} />
+                <WishlistUi onAddCartCountClick={onAddcartCount} onAddToCartClick={onAddToCart} onWishlist={wishlists} reduceCountWishlist={onReduceWishlistCount} wishlistRemove={onRemoveFromWishlist} />
                 <TopSelling 
                     onClickAddCart={onAddToCart} 
                     onClickAddWishlist={onAddToWishlist}

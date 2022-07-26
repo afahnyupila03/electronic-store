@@ -1,9 +1,11 @@
 import Wrapper from "../../Helpers/Wrapper";
-import { Row, Col, Card, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
+import WishlistCartCardUI from "./WishlistCartCardUI";
 
-const WishlistUi = ({ onWishlist, wishlistRemove, reduceCountWishlist }) => {
+const WishlistUi = ({ onAddToCartClick, onWishlist, wishlistRemove, reduceCountWishlist, onAddCartCountClick }) => {
 
-
+    const totalPrice = onWishlist.reduce((total, product) => total + product.price, 0);
+    const finalPrice = totalPrice.toFixed(2);
 
     return (
         <Wrapper style={{marginTop: '8rem'}}>
@@ -11,7 +13,8 @@ const WishlistUi = ({ onWishlist, wishlistRemove, reduceCountWishlist }) => {
 
                 <div className="cart-ui__header">
                     <div className="cart-ui__header__title">
-                        <h1>Wishlist</h1>
+                        <h2>Wishlist</h2>
+                        <h2>Price <span className='text-danger'>{finalPrice}</span> </h2>
                     </div>
                 </div>
 
@@ -20,25 +23,16 @@ const WishlistUi = ({ onWishlist, wishlistRemove, reduceCountWishlist }) => {
                         <Row>
                             {onWishlist.length === 0 ? <h1>Your wishlist is empty</h1> : (
                                 onWishlist.map((product, index) => (
-                                    <Col key={index} lg={4} md={6} sm={12}>
-                                        <Card style={{ border: 'none' }} className='mb-3 p-3'>
-                                            <div className="cart-ui__body__item" key={product.id}>
-
-                                                <div className="cart-ui__body__item__image">
-                                                    <Card.Img variant='top' className='card-img' src={product.image} />
-                                                </div>
-                                                <div className="cart-ui__body__item__info mt-5 text-center">
-                                                    <h3>{product.name.slice(0, 19)}</h3>
-                                                </div>
-
-                                                <div className="cart-ui-buttons mt-5">
-                                                    <Button type='submit' onClick={() => wishlistRemove(product) | reduceCountWishlist(product) } className='m-auto align-self-center d-flex' style={{fontSize: '1.5rem'}} variant='danger'>
-                                                        Remove
-                                                    </Button>
-                                                </div>
-
-                                            </div>
-                                        </Card>
+                                    <Col key={index} lg={3} md={6} sm={12}>
+                                        <WishlistCartCardUI 
+                                            product={product}
+                                            onCartClickAdd={onAddToCartClick}
+                                            onCartCountClickAdd={onAddCartCountClick}
+                                            onWishlistRemove={wishlistRemove}
+                                            onReduceCountWishlist={reduceCountWishlist}
+                                            name={product.name}
+                                            image={product.image}
+                                        />
                                     </Col>
                                 )) 
                             )}

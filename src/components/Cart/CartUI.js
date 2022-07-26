@@ -1,5 +1,6 @@
-import { Col , Row, Card, Button, Container } from 'react-bootstrap'
+import { Col , Row, Container } from 'react-bootstrap'
 import Wrapper from '../../Helpers/Wrapper';
+import CartCardUI from './CartCardUI';
 
 const CartUI = ({ onCart, cartRemove, reduceCountCart }) => {
 
@@ -22,30 +23,20 @@ const CartUI = ({ onCart, cartRemove, reduceCountCart }) => {
                         </div>
                     </div>
 
-                    <div className="cart-ui__body">
+                    <div className="cart-ui__body mt-3">
                         <div className="cart-ui__body__empty">
                             <Row>
                                 {onCart.length === 0 ? <h1>Your cart is empty</h1> : (
                                     onCart.map((product, index) => (
-                                        <Col key={index} lg={4} md={6} sm={12}>
-                                            <Card style={{ border: 'none' }} className='mb-3 p-3'>
-                                                <div className="cart-ui__body__item" key={product.id}>
-
-                                                    <div className="cart-ui__body__item__image">
-                                                        <Card.Img variant='top' className='card-img' src={product.image} />
-                                                    </div>
-                                                    <div className="cart-ui__body__item__info mt-5">
-                                                        <h3>{product.quantity} x {product.name.slice(0, 19)}</h3>
-                                                    </div>
-
-                                                    <div className="cart-ui-buttons mt-5">
-                                                        <Button type='submit' className='m-auto align-self-center d-flex' style={{ fontSize: '1rem' }} variant='danger' onClick={() => cartRemove(product) | reduceCountCart(product) }>
-                                                            Remove
-                                                        </Button>
-                                                    </div>
-
-                                                </div>
-                                            </Card>
+                                        <Col key={index} lg={3} md={6} sm={12}>
+                                            <CartCardUI 
+                                                product={product}
+                                                onCartRemove={cartRemove}
+                                                onCartReduceCount={reduceCountCart}
+                                                image={product.image}
+                                                quantity={product.quantity}
+                                                name={product.name}
+                                            />
                                         </Col>
                                     ))
                                 )}
