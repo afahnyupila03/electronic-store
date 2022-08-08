@@ -23,7 +23,7 @@ const CartCardUI = (props) => {
                             {props.quantity} x {hover ? props.name : props.name.slice(0, 20) + '...'} 
                         </Card.Title>
                         
-                            <Button type='submit' className='m-auto align-self-center d-flex' variant='danger' onClick={() => props.onCartRemove(props.product) | props.onReduceCountCart(props.product) }>
+                        <Button type='submit' className='m-auto align-self-center d-flex' variant='danger' onClick={() => props.onCartRemove(props.product) | props.onCartReduceCount(props.product) }>
                                 <i className="fa fa-trash m-auto align-self-center d-flex fa-2x" aria-hidden="true"></i>
                             </Button>
                     </Card.Body>
